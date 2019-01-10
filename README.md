@@ -58,5 +58,5 @@ Geo locations and build `geojson` maps which can be loaded into
 it, otherwise you will just see red dots everywhere. Some maps from a mapping
 at Jan 2019 are available here.
 
-![testnet3](https://embed.github.com/view/geojson/stealth/hoschi/master/testnet3.geojson)
+[testnet3](https://embed.github.com/view/geojson/stealth/hoschi/master/testnet3.geojson)
 
