@@ -56,7 +56,7 @@ There are some Perl scripts inside `contrib` that can map the IP addresses to
 Geo locations and build `geojson` maps which can be loaded into
 *Open Street-view*, *Google Maps* or others. You most likely need to cluster
 it, otherwise you will just see red dots everywhere. Some maps from a mapping
-at Jan 2019 are available here.
+at Jan 2019 are available down below (click to actually render the map).
 
-[testnet3](https://github.com/stealth/maps/blob/master/testnet3.geojson)
+[![testnet3](https://github.com/stealth/maps/blob/master/testnet3.jpg)](https://github.com/stealth/maps/blob/master/testnet3.geojson)
 
