@@ -1,14 +1,16 @@
 hoschi
 ======
 
-*Hoschi* (common German 90's slang for *dude* that rhymes with *satoshi*) is a BTC mapping
-tool which can enumerate all IP's inside the bitcoin network for further analysis.
+*Hoschi* (common German 90's slang for *dude* that rhymes with *satoshi*) is
+a BTC mapping tool which can enumerate all IP's inside the bitcoin network
+for further analysis.
 
-It's recommended to use IPv4 as well as IPv6 addresses, since a lot of the BTC nodes
-will be IPv6 and you'd get a lot of connect errors without IPv6 connectivity.
+It's recommended to use IPv4 as well as IPv6 addresses, since a lot of the
+BTC nodes will be IPv6 and you'd get a lot of connect errors without IPv6
+connectivity.
 
-You need a good seed-node to start with. If you connect to edge-nodes at first,
-your mapping will get stuck.
+You need a good seed-node to start with. If you connect to edge-nodes at
+first, your mapping will get stuck.
 
 build
 -----
@@ -41,18 +43,20 @@ hoschi <-4 ip4> <-6 ip6> [-p lport] [-r node-file] [-d node-file] [-l logfile] <
 
 ```
 
-Note that *hoschi* will map `-testnet` unless you change the magic values in `protocol.cc` to
-use the main BTC network.
+Note that *hoschi* will map `-testnet` unless you change the magic values in
+`protocol.cc` to use the main BTC network.
 
-*Hoschi* has small runtime footprint (C++11! :), although it may handle 10k's of connections
-simultaneously. There's a `usleep()` delay in the connect loop since a lot of cable modems
-may otherwise loose packets if you connect too fast. Mapping the entire BTC main network
-with that delay took 2h on a 100MBit/s up-link on the (resource-)cheapest VPS machine that I found.
+*Hoschi* has small runtime footprint (C++11! :), although it may handle 10k's
+of connections simultaneously. There's a `usleep()` delay in the connect loop
+since a lot of cable modems may otherwise loose packets if you connect too
+fast. Mapping the entire BTC main network with that delay took 2h on a
+100MBit/s up-link on the (resource-)cheapest VPS machine that I found.
 
-There are some Perl scripts inside `contrib` that can map the IP addresses to Geo locations and
-build `geojson` maps which can be loaded into *Open Street-view*, *Google Maps* or others. You most likely
-need to cluster it, otherwise you will just see red dots everywhere. Some maps from a mapping
+There are some Perl scripts inside `contrib` that can map the IP addresses to
+Geo locations and build `geojson` maps which can be loaded into
+*Open Street-view*, *Google Maps* or others. You most likely need to cluster
+it, otherwise you will just see red dots everywhere. Some maps from a mapping
 at Jan 2019 are available here.
 
-![testnet3](https://github.com/stealth/maps/blob/master/testnet3.geojson)
+![testnet3](https://embed.github.com/view/geojson/stealth/hoschi/master/testnet3.geojson)
 
