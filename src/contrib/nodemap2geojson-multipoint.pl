@@ -18,7 +18,7 @@ my $ip = "";
 my %handled_ips = ();
 
 open(I,"<$nodemap") or die $!;
-open(O,">/tmp/geo.json") or die $!;
+open(O,">${nodemap}.geojson") or die $!;
 print O<<EOJ;
 {
 "type": "FeatureCollection",
