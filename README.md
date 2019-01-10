@@ -26,7 +26,7 @@ run
 ---
 
 ```
-stealth@map:hoschi$ build/hoschi
+stealth@map:hoschi$ src/build/hoschi
 
 hoschi v0.1 (C) Sebastian Krahmer -- https://github.com/stealth/hoschi
 
